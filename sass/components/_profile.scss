@@ -1,0 +1,44 @@
+.profile {
+    padding-top: 0;
+   &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+   }
+   &__list {
+    display: flex;
+   }
+   &__card-item {
+    position: relative;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+   }
+   &__card-img {
+    position: absolute;
+    top: 224px ;
+    padding: 27px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+   }
+   &__card-title {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,27 @@
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  
+  
+  .footer-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 0;
+    margin-left: 12px;
+    align-items: center;
+   &__text {
+    margin-right: 34px;
+  }
+   &__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    cursor: pointer;
+    
+  }
+  }
+  
+  
+  
+  

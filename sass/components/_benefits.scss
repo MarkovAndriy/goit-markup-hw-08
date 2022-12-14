@@ -1,0 +1,43 @@
+.benefits {
+  &__title {margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);} 
+    
+  &__list {
+    display: flex;
+  }
+
+  &__icon-list {
+    display: flex;
+  }
+  &__icon-item {
+    padding: 25px 100px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    min-width: 270px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--link-color);
+  }
+  }
+  
+  
+  
+  
+ 
