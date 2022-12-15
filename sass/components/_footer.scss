@@ -1,9 +1,11 @@
 .footer {
     padding: 60px 0;
     background: var(--background-footer-color);
-    & .container {
+    @media screen and (min-width: 768px) {
       display: flex;
+      flex-wrap: wrap;
     }
+    
   &__logo {
     margin-right: 0;
     margin-bottom: 20px;
@@ -11,6 +13,7 @@
     color: var(--white-color);  
   }
   &__title {
+    
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
@@ -19,8 +22,13 @@
     color: var(--white-color);
   }
   &__cocial {
-    margin-left: 70px;
+    // margin-left: 122px;
+    max-width: 480px;
     padding-top: 12px;
+    padding-left: 137px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }  
   }
   
