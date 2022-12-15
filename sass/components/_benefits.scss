@@ -6,14 +6,13 @@
     text-transform: uppercase;
     color: var(--main-color);} 
     
-  &__list {
-    display: flex;
-  }
+  
 
   &__icon-list {
     display: flex;
+    
   }
-  &__icon-item {
+  &__box-icon {
     padding: 25px 100px;
     background-color: var(--team-background-color);
     border-radius: 4px;
@@ -21,19 +20,22 @@
     margin-bottom: 30px;
     &:last-child {
       margin-right: 0;
-    }
+   }
   }
-  &__item {
-    min-width: 270px;
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-  }
+   &__icon-item {
+   
+   }
   &__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--link-color);
+  }
+  @media screen and (min-width: 768px) {
+    
+  }
+  @media screen and (min-width:1200px) {
+    
   }
   }
   
