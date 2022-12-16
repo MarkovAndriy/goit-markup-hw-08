@@ -1,5 +1,5 @@
 .hero {
-    padding: 118px 60px;
+    padding: 0 60px;
     background: var(--background-hero-color);
     text-align: center;
     background-image: linear-gradient(
@@ -9,6 +9,7 @@
       url(../images/bg-hero.jpg);
     background-repeat:no-repeat;
     background-position:center;
+    
   &__title {
     margin: 0 auto 30px;
     font-weight: 900;
@@ -21,11 +22,21 @@
     }  
   }
   @media screen and (min-width: 768px) {
-    padding: 118px 204px;
+    padding: 118px 0px;
   }
   @media screen and (min-width:1200px) {
-    padding: 200px 240px;
+    padding: 200px 0px;
   }
   }
+.hero-box {
+  max-width: 320px;
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width:1200px) {
+    max-width: 600px;
+  }
+  
+}
   
   

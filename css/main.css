@@ -32,17 +32,17 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -170,7 +170,7 @@ p {
 }
 
 .hero {
-  padding: 118px 60px;
+  padding: 0 60px;
   background: var(--background-hero-color);
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero.jpg);
@@ -193,12 +193,26 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
+    padding: 118px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 240px;
+    padding: 200px 0px;
+  }
+}
+
+.hero-box {
+  max-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .hero-box {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-box {
+    max-width: 600px;
   }
 }
 
@@ -542,19 +556,10 @@ p {
   padding: 60px 0;
   background: var(--background-footer-color);
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 .footer__logo {
   margin-right: 0;
   margin-bottom: 20px;
-  display: inline-block;
+  display: block;
   color: var(--white-color);
 }
 .footer__title {
@@ -568,11 +573,28 @@ p {
 .footer__cocial {
   max-width: 480px;
   padding-top: 12px;
-  padding-left: 137px;
+}
+@media screen and (max-width: 767px) {
+  .footer__cocial {
+    padding-left: 137px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__cocial {
     margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

@@ -1,15 +1,12 @@
 .footer {
+    
     padding: 60px 0;
     background: var(--background-footer-color);
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-    }
     
   &__logo {
     margin-right: 0;
     margin-bottom: 20px;
-    display: inline-block;
+    display: block;
     color: var(--white-color);  
   }
   &__title {
@@ -25,14 +22,23 @@
     // margin-left: 122px;
     max-width: 480px;
     padding-top: 12px;
-    padding-left: 137px;
+    
+    @media screen and (max-width: 767px) {
+      padding-left: 137px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 70px;
     }
   }  
   }
   
-  
+  .footer-box {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+  }
   .address {
     &__item {
       font-style: normal;
