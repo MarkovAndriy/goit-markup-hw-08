@@ -1,5 +1,6 @@
 .button-wrapper {
     display: inline-block;
+    max-width: 200px;
     position: relative;
   }
   
@@ -7,9 +8,10 @@
   .footer-button {
     width: 200px;
     height: 50px;
-    padding: 10px 0;
-    margin-left: 12px;
-    align-items: center;
+    padding: 10px 64px 10px 31px;
+    
+    
+    
    &__text {
     margin-right: 34px;
   }

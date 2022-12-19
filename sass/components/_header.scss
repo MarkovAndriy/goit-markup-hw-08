@@ -1,14 +1,21 @@
 
   .header {
     border-bottom: 1px solid var(--border-color);
+    
     & .container {
       display: flex;
       align-items: center;
     }
     &__list {
       display: flex;
+      &--tablet {
+        @media screen and (min-width: 768px ) and (max-width: 1199px) {
+          flex-wrap: wrap;
+        }
+      }
     }
     &__item {
+     
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -17,6 +24,11 @@
       &:not(:first-child) {
         margin-left: 50px;
        }
+      
+      @media screen and (min-width: 768px ) and (max-width: 1199px) {
+        &--tablet { margin-left: 50px; }
+        }
+      
       & .studio::after {
         content: "";
         position: absolute;
@@ -26,6 +38,7 @@
         left: 0;
         bottom: -1px;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
       } 
       & .portfolio::after {
         content: "";
@@ -42,6 +55,7 @@
       color: var(--main-color);
       padding: 32px 0 31px;
       display: block;
+      
       &--active {
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
@@ -61,6 +75,13 @@
     padding: 32px 0 31px;
     color: var(--link-color);
     fill: var(--link-color);
+    @media screen and (min-width: 768px ) and (max-width: 1199px) {
+      padding-bottom: 10px;
+      padding-top: 0;
+      &:last-child {
+        padding-top: 21px;
+      }
+    }
   }
   &__icon {
     margin-right: 10px;

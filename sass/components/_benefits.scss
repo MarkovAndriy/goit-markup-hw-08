@@ -13,10 +13,13 @@
   } 
 
   &__box-icon {
-    padding: 25px 190px;
+    padding: 25px 0;
     background-color: var(--team-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
   }
    

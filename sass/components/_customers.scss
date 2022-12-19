@@ -15,7 +15,13 @@
   &__item {
     margin-right: 30px;
     margin-bottom: 30px;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:369px) {
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width:369px) and (max-width:767px) {
       &:nth-child(even) {
         margin-right: 0;
       }
@@ -53,9 +59,13 @@
     }
   }
   &__list {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    
+    
   }
 }
 

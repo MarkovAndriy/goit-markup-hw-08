@@ -1,11 +1,14 @@
 .logo {
-    margin-right: 93px;
+    margin-right: 88px;
     font-family: $font-raleway;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--header-logo-color);
     text-decoration: none;
+    @media screen and (min-width: 1200px ) {
+      margin-right: 93px;
+    }
   }
   .front-logo {
     color: var(--active-color);
